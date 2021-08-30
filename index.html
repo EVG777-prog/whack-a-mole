@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>whack a mole</title>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="timer" class="container col">
+            <h2>TIMER:</h2>
+            <h2 id="timer-table">10:00</h2>
+        </div>
+        <div class="container col">
+            <button id="btn-start">Start</button>
+            <button id="btn-reset">Reset TOP Score</button>
+        </div>
+        <div class="container col">
+            <h1>Whack-a-mole!</h1>
+            <h2>TOP Score<span class="score">0</span>Current Score<span class="score">0</span></h2>
+        </div>
+
+        <div>
+            <div>
+                <input type="radio" id="game-easy" name="difficulty-game" value="EASY" checked>
+                <label for="game-easy">EASY</label>
+            </div>
+            <div>
+                <input type="radio" id="game-medium" name="difficulty-game" value="MEDIUM">
+                <label for="game-medium">MEDIUM</label>
+            </div>
+            <div>
+                <input type="radio" id="game-hard" name="difficulty-game" value="HARD">
+                <label for="game-hard">HARD</label>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mole"></div>
+        </div>
+    </div>
+
+    <audio id="audio-change-difficulty" src="./assets/audio/changeDifficulty.mp3"></audio>
+    <audio id="audio-reset-top-score" src="./assets/audio/resetTopScore.mp3"></audio>
+    <audio id="bonk" src="./assets/audio/bonk.mp3"></audio>
+    <audio id="win" src="./assets/audio/win.mp3"></audio>
+    <audio id="lose" src="./assets/audio/lose.mp3"></audio>
+    <audio id="start" src="./assets/audio/start.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
